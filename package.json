@@ -6,15 +6,22 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "ios": "react-native run-ios --simulator 'iPhone Xs Max'",
-    "android": "react-native run-android"
+    "android": "react-native run-android",
+    "postinstall": "jetifier -r"
   },
   "dependencies": {
     "react": "16.6.3",
-    "react-native": "0.57.8"
+    "react-native": "0.57.8",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-native-reanimated": "^1.2.0",
+    "react-native-screens": "1.0.0-alpha.23",
+    "react-navigation": "^4.0.5",
+    "react-navigation-tabs": "^2.5.3"
   },
   "devDependencies": {
     "babel-jest": "24.9.0",
     "jest": "24.9.0",
+    "jetifier": "^1.6.4",
     "metro-react-native-babel-preset": "0.56.0",
     "react-test-renderer": "16.6.3"
   },
